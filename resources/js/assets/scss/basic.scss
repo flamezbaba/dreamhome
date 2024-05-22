@@ -1,0 +1,153 @@
+.bgx-blue {
+    background-color: var(--h-blue-1);
+
+    &:hover{
+        background-color: var(--h-blue-2);
+    }
+}
+
+.text-blue-1 {
+    color: var(--h-blue-1);
+}
+
+.text-blue-2 {
+    color: var(--h-blue-2);
+}
+
+
+.bgx-green {
+    background-color: var(--h-green-1);
+
+    &:hover{
+        background-color: var(--h-green-2);
+    }
+}
+
+.text-green-1 {
+    color: var(--h-green-1);
+}
+
+.text-green-2 {
+    color: var(--h-green-2);
+}
+
+.bt1{
+    color: var(--bt-1);
+}
+
+.bt2{
+    color: var(--bt-2);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+
+    label{
+        font-size: 1rem;
+        color: var(--blue-one);
+        position: relative;
+        // display: block;
+
+        &.imp{
+            &::after{
+                display: block;
+                content: "*";
+                color: red;
+                position: absolute;
+                top: 0;
+                right: -10px;
+            }
+        }
+
+        
+    }
+
+    p{
+        font-size: .9rem;
+    }
+}
+
+input, select{
+    transition: all .3s;
+    width: 100%;
+    
+    &.form-control {
+        border: 1px solid #6b7280;
+        outline: none;
+        border-radius: 3px;
+        font-size: 1rem;
+
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #5858f7;
+        }
+    }
+}
+
+textarea{
+    transition: all .3s;
+    width: 100%;
+
+    &.form-control {
+        border: 1px solid #6b7280;
+        outline: none;
+        border-radius: 0px;
+        font-size: 1rem;
+        height: 100px;
+        letter-spacing: 1.5px;
+
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #5858f7;
+        }
+    }
+}
+
+
+
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    color: #fff;
+    width: auto;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    gap: 10px;
+
+    &.btn-blue{
+        background-color: var(--blue-one); 
+
+        &:hover{
+            background-color: var(--blue-two); 
+        }
+    }
+
+    &.btn-red{
+        background-color: var(--red-one); 
+
+        &:hover{
+            background-color: var(--red-two); 
+        }
+    }
+
+    &.btn-green{
+        background-color: var(--green-one); 
+        color: #000;
+
+        &:hover{
+            background-color: var(--green-two); 
+        }
+    }
+    
+}
+
+.ck-reset{
+    width: 100%!important;
+}
